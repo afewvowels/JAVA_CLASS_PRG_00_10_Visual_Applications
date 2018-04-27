@@ -88,10 +88,10 @@ public class LayoutDemo extends JFrame {
         b2.setBounds(100, 10, 50, 40);
         b3.setBounds(10, 60, 200, 40);
         
-        
         getContentPane().add(P);
-        setSize(200, 200);  
+        setSize(250, 180);  
         setVisible(true);       
+        setResizable(false);
         setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE);
     } 
     
