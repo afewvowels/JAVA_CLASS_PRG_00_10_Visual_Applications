@@ -29,17 +29,36 @@ public class FlowLayout extends JFrame {
         b5 = new JButton("Button 5");
         b6 = new JButton("Button 6");
         
-        JPanel P = new JPanel(new GridLayout(2,3));
+//        JPanel P = new JPanel(new GridLayout(2,3));
+//
+//        P.add(b1);
+//        P.add(b2);
+//        P.add(b3);
+//        P.add(b4);
+//        P.add(b5);
+//        P.add(b6);
+//        JPanel P = new JPanel();
+//
+//        FlowLayout flowLayout = new FlowLayout();
+//        
+//        getContentPane().add(P);
+
+        JPanel P = new JPanel(new BorderLayout());
+        JPanel Buttons = new JPanel(new GridLayout(1,2));
         
+        
+        Buttons.add(b3);
+        Buttons.add(b6);
+        
+        P.add(Buttons, BorderLayout.NORTH);
+        
+        P.add(b1, BorderLayout.SOUTH);
+        P.add(b2, BorderLayout.WEST);
+//        P.add(b3, BorderLayout.NORTH);
+        P.add(b4, BorderLayout.EAST);
+        P.add(b5, BorderLayout.CENTER);
+
         getContentPane().add(P);
-        
-        
-        P.add(b1);
-        P.add(b2);
-        P.add(b3);
-        P.add(b4);
-        P.add(b5);
-        P.add(b6);
         
         setVisible(true);
         setSize(400,300);
