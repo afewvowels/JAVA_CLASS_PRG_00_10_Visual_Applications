@@ -29,13 +29,20 @@ public class FlowLayout extends JFrame {
         b5 = new JButton("Button 5");
         b6 = new JButton("Button 6");
         
-        JPanel P = new JPanel(new FlowLayout());
+        JPanel P = new JPanel(new GridLayout(2,3));
+        
+        getContentPane().add(P);
+        
+        
         P.add(b1);
         P.add(b2);
         P.add(b3);
         P.add(b4);
         P.add(b5);
         P.add(b6);
+        
+        setVisible(true);
+        setSize(400,300);
     }
     
     public static void main(String[] args) {
